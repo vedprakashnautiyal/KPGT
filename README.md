@@ -96,7 +96,7 @@ Then unzip it and put the files in the KPGT/models/downstream/ directory.
 
 Then the results can be reproduced by:
 
-    python evaluation.py --config base --model_path ../models/downstream/bace/scaffold_0.pth --dataset bace --data_path ../datasets/ --dataset_type classification --metric rocauc --split scaffold-0
+    python evaluation.py --config base --model_path ../models/downstream/bace/scaffold-0.pth --dataset bace --data_path ../datasets/ --dataset_type classification --metric rocauc --split scaffold-0
 
 The dataset, split and model can be specified using parameters --dataset, --split and --model_path, respectively.
 
