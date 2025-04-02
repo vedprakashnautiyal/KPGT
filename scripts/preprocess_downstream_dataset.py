@@ -19,7 +19,7 @@ def parse_args():
     parser.add_argument("--data_path", type=str, required=True)
     parser.add_argument("--dataset", type=str, required=True)
     parser.add_argument("--path_length", type=int, default=5)
-    parser.add_argument("--n_jobs", type=int, default=32)
+    parser.add_argument("--n_jobs", type=int, default=4) # Original Code has 32 Concurrent Workers which were overloading low end systems
     args = parser.parse_args()
     return args
 
